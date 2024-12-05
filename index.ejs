@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quara posts</title>
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+        h1{
+            color: brown;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        div{
+            background-color: plum;
+            font-size: medium;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Quara Posts</h1>
+    <% for(post of posts) { %>
+    <div>
+        <h3 class="user"> @<%= post.username%></h3>
+<h4 class="content"><%= post.content%></h4>   
+ </div>
+<%}%>
+</body>
+</html>
